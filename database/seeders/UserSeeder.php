@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
         \App\Models\User::truncate();
 
 
-        $current_timestamp = date('Y-m-d');
+        $today = date('Y-m-d');
         $dayAgo = date('Y-m-d', strtotime('-1 day'));
         $twoDaysAgo = date('Y-m-d', strtotime('-2 day'));
 
@@ -35,7 +35,7 @@ class UserSeeder extends Seeder
         \App\Models\User::create([
             'id' => 2,
             'day' => 1,
-            'dt' => $current_timestamp,
+            'dt' => $today,
             'coins' => $firstDaysBonus,
         ]);
 

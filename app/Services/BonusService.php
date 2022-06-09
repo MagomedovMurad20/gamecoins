@@ -40,6 +40,29 @@ class BonusService
     {
         $user = User::find($userId);
 
+        if ($user !== null) {
+            $now = new \DateTime();
+            if ($user->dt !== null) {
+                $date = \DateTime::createFromFormat("Y-m-d", $user->dt->format('Y-m-d'));
+                $interval = $now->diff($date);
+                if ($interval->d === 0) {
+                    return $user;
+                }
+                if ($interval->d === 1) {
+                    $user->dt = date('Y-m-d');
+                    $user->day = $user->day + 1;
+                }
+                if ($interval->d > 1) {
+                    $user->dt = date('Y-m-d');
+                    $user->day = 1;
+                }
+            } else { //
+                $user->dt = date('Y-m-d');
+            }
+
+            $user->coins = $user->coins + self::getBonusOfDay($user->day);
+            $user->save();
+        }
 
         return $user;
     }
