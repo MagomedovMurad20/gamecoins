@@ -1,4 +1,8 @@
 <h1> Проект написан на Laravel v9.17, собран на Dockere. 
+Маршрутизация реализована в файле: routes\web.php.
+Разработанные контроллеры находятся в папке: app\Http\Controllers.
+Файлы миграции находятся в директории: database\migrations.
+Класс модели: app\Models.
 Для взаимодействия с Dockeroм использован Sail <a href="https://laravel.com/docs/9.x/sail">Laravel Sail</a>.
 После клонирования понадобится выполнение следующих команд в корне проекта: <br/> 
 -"docker run --rm \
