@@ -24,7 +24,7 @@
 -"sail artisan db:seed"
 <br/>
 После этого перейдите в браузере по адресу 
--"http://localhost/api/get-bonus/{id юзера от 1 до 5 включительно}"
+-"http://localhost/get-bonus/{id юзера от 1 до 5 включительно}"
 </h3>
 <p align="center">
 <a href="https://laravel.com" target="_blank">
