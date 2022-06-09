@@ -2,8 +2,11 @@
 Для взаимодействия с Dockeroм использован Sail <a href="https://laravel.com/docs/9.x/sail">Laravel Sail</a>.
 <br/>
 Маршрутизация реализована в файле: routes\web.php.
+<br/>
 Разработанные контроллеры находятся в папке: app\Http\Controllers.
+<br/>
 Файлы миграции находятся в директории: database\migrations.
+<br/>
 Класс модели: app\Models.
 <br/>
 После клонирования понадобится выполнение следующих команд в корне проекта: <br/> 
