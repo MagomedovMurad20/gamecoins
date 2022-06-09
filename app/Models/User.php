@@ -38,4 +38,6 @@ class User extends Authenticatable
     protected $casts = [
         'dt' => 'datetime',
     ];
+        public $timestamps = false;
+
 }

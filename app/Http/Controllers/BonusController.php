@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Services\BonusService;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class BonusController extends Controller
 {
     public function get(int $userId)
     {
-        return $userId;
+        $addBonusResult = BonusService::addBonus($userId);
+
+        return ($addBonusResult !== null) ? $addBonusResult : throw new NotFoundHttpException();
     }
 }
