@@ -9,7 +9,7 @@
 <br/>
 Класс модели: app\Models.
 <br/>
-После клонирования понадобится выполнение следующих команд в корне проекта: <br/> 
+После клонирования понадобится выполнение следующих команд в корне проекта:</h3> <br/> 
 -"docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v $(pwd):/var/www/html \
@@ -25,7 +25,7 @@
 <br/>
 После этого перейдите в браузере по адресу 
 -"http://localhost/get-bonus/{id юзера от 1 до 5 включительно}"
-</h3>
+
 <p align="center">
 <a href="https://laravel.com" target="_blank">
 <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
